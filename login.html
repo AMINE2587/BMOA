@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In BMOA</title>
+    <link rel="shortcut icon" href="bar icons/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login">
+        <form>
+                <h1>Login BMOA</h1>
+                <div class="inp-box">
+                    <input id="email-login" placeholder="Email" type="email" required>
+                </div>
+                <div class="inp-box">
+                    <input id="password-login" placeholder="Password" type="password" required>
+                    
+                </div>
+                <div class="remeber-forget">
+                    <label for="cl-checkbox"><input  id="remeber" type="checkbox"> Remember Me</label>
+                    <a href="">Forget Password?</a>
+                </div>
+                <div class="btn-box">
+                <button id="login-btn" class="btn" type="submit">Sign In</button>
+                </div>
+                <div class="signup-link">
+                    <p>D'ont Have An Acount?<a style="color: aquamarine;" href="signup.html"> Sign Up</a></p>
+                </div>
+                <p style="text-align: center; font-size: 12px;">Welcome Back!</p>
+        </form>
+    </div>
+    <video autoplay muted loop id="background-video">
+        <source src="backgroundvideos/login back.mp4" type="video/mp4">
+    </video>
+
+    <script src="loginpr.js"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif;
+   box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+    
+.menu{
+    background-color: #252526;
+    height: 100vh;
+    width: 240px;
+    padding: 10px;
+    color: white;
+}
+ul li{
+    list-style: none;
+ }
+ ul li a{
+     text-decoration: none;
+ }
+.bmoa ul li a img{
+     font-size: 36px;
+     margin-left: -15px;
+     color: white;
+     transition: transform 0.3s ease-in-out;
+     margin-top: 10px;
+}
+.bmoa ul li a img:hover{
+    transform: scale(1.05);
+}
+.sections{
+    margin-top: 25px;
+    
+}
+.sections ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px ;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 13px;
+    transition: backgroundColor 0.3s ease-in-out ;
+}
+
+.sections ul li:hover{
+    background-color: #434344;
+}
+.active{
+    background-color: #434344;
+}
+.sections ul li i{
+    font-size: 20px;
+}
+.sections ul li a{
+    color: white;
+    font-size: 14px;
+}
+.rights{
+    position: fixed;
+    bottom: 10px;
+    margin-left: 10px;
+}
+.rights p{
+    font-size: 11px;
+    line-height: 1.5;
+}
+ul li{
+   list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.home-content h2{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.home-content img{
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    right: 15px;
+}
+.balance-h{
+    font-size: 22px;
+}
+.balance-p{
+    margin-top: 10px;
+    color: antiquewhite;
+}
+.balance-p::after{
+    content: 'USD';
+}
+.balnce{
+   margin-top: 60px;
+   height: 32vh;
+   width: 95%;
+   margin-left: 15px;
+}
+.blance-contain{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5px;
+  padding: 20px;
+  gap: 15px;
+  margin-left: -20px;
+ 
+}
+.box-contain p{
+    font-size: 19px;
+}
+.eur::after{
+    content: ' EUR';
+}
+.usd::after{
+    content: ' USD';
+}
+.gbp::after{
+    content: ' GBP';
+}
+
+.box-contain{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    width: 325px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.box-contain:hover{
+    transform: translateY(-5px);
+    background: rgba(173, 173, 173, 0.12);
+}
+.exchange-coin{
+    height: 40vh;
+    margin: 10px 10px 10px;
+}
+.exchange-coin{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5px;
+    padding: 20px;
+    height: 45vh;
+    margin-left: -5px;
+    
+}
+.box{
+    height: 30vh;
+    width: 102%;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.box:hover{
+    transform: scale(1.02);
+    background: rgba(173, 173, 173, 0.12);
+   
+}
+.usdt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.usdt input{
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    border: gray solid 2px;
+    background: none;
+    backdrop-filter: blur(15px);
+    color: white;
+    -webkit-backdrop-filter: blur(10px);
+}
+.usdt input::placeholder{
+    color: white;
+}
+.usdt input:focus{
+    outline: none;
+    border: rgb(255, 255, 255) solid 2px;
+}
+.euros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.euros input{
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: gray solid 2px;
+    background: none;
+    backdrop-filter: blur(15px);
+    color: white;
+}
+.euros input:focus{
+    outline: none;
+    border: rgb(255, 255, 255) solid 2px;
+}
+.euros input::placeholder{
+    color: white;
+}
+form{
+    padding: 5px;
+}
+.btn-exchange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.btn-exchange button{
+    border: 1px white solid;
+    padding: 5px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background:  linear-gradient(90deg, rgb(121, 71, 71), rgb(57, 50, 50), rgb(21, 19, 19), rgb(255, 255, 255));
+    background-size: 300% 300%;
+    animation: btn-move 5s infinite linear;
+  }
+  @keyframes btn-move {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+  .btn-exchange button:hover{
+      background: linear-gradient(to right, rgb(53, 53, 53), rgb(4, 1, 1));
+      transform: scale(1.02);
+  }
+
+
+.get-paid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    width: 100%;
+    margin: 0px 40px;
+
+    
+}
+.box-getpaid{
+    height: 30vh;
+    width: 300px;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.box-getpaid:hover{
+    transform: translateY(-5px);
+    background: rgba(173, 173, 173, 0.12);
+   
+}
+.box-getpaid h4{
+    margin-top: 25px;
+    text-align: center;
+}
+.box-getpaid i{
+    margin-left: 100px;
+    font-size: 45px;
+}
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    animation-name: mainmove;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; 
+    cursor: pointer;
+}
+  @keyframes mainmove{
+     0% {
+         transform: translateX(0px) translateY(5px) rotate(0deg);
+        }
+    25% {
+      transform: translateX(0px) translateY(-5px) rotate(0deg);
+  }
+  50% {
+      transform: translateX(0px) translateY(5px) rotate(0deg);
+  }
+  75% {
+      transform: translateX(0px) translateY(-5px) rotate(0deg);
+  }
+  100% {
+      transform: translateX(0px) translateY(5px) rotate(0deg);
+  }
+}
+.main:hover {
+    transform: scale(1.1);
+    animation-play-state: paused;
+    animation: none;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .images {
+        gap: 5px;
+    }
+    
+    .cards {
+        width: 80px;
+    }
+}
+.btn-order{
+  margin-top: 10px;
+  padding: 10px;
+  width: 150px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(163, 163, 163), white);
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+  background: linear-gradient(90deg, rgb(129, 129, 129), rgb(195, 175, 175), rgb(251, 118, 118), rgb(204, 67, 67));
+  background-size: 300% 300%;
+  animation: btn-move 5s infinite linear;
+}
+.btn-order:hover{
+  background: linear-gradient(to right, rgb(255, 41, 41), rgb(255, 140, 140));
+  color: rgb(0, 0, 0);
+  transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+
+.rate-coin{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: 20px;
+    height: 70vh;
+    
+}
+.box-rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.box-rate:hover{
+    background: rgba(173, 173, 173, 0.12);
+   
+}
+.usd-rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.usd-rate input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    border: gray solid 2px;
+    background: none;
+    backdrop-filter: blur(15px);
+    color: white;
+    -webkit-backdrop-filter: blur(10px);
+}
+.usd-rate input::placeholder{
+    color: white;
+}
+.usd-rate input:focus{
+    outline: none;
+    border: rgb(255, 255, 255) solid 2px;
+}
+.euro-rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    
+}
+.euro-rate input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: gray solid 2px;
+    background: none;
+    backdrop-filter: blur(15px);
+    color: white;
+}
+.euro-rate input:focus{
+    outline: none;
+    border: rgb(255, 255, 255) solid 2px;
+}
+.euro-rate input::placeholder{
+    color: white;
+}
+form{
+    padding: 5px;
+    width: 100%;
+}
+.btn-rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.btn-rate button{
+    border: 1px white solid;
+    padding: 5px;
+    width: 25%;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    background:  linear-gradient(90deg, rgb(121, 71, 71), rgb(57, 50, 50), rgb(21, 19, 19), rgb(255, 255, 255));
+    background-size: 300% 300%;
+    animation: btn-rmove 5s infinite linear;
+  }
+  @keyframes btn-rmove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+  .btn-rate button:hover{
+      background: linear-gradient(to right, rgb(53, 53, 53), rgb(4, 1, 1));
+      transform: scale(1.02);
+  }
+
+
+
+
+
+
+
+
+#home-display{
+    display: block;
+}
+#exchange-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#convert-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-top: 200px;
+    display: none;
+}
+
+
+
+
+#cards-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    display: none;
+}
+
+#get-paid-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    display: none;
+    
+
+}

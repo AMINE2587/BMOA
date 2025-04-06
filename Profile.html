@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="shortcut icon" href="bar icons/profile.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="dashbord.html">
+                        <img width="200px" src="bmoa logos/no back.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul>
+            <li >
+                <a href="" download="">Pdf
+                <i class='bx bxs-download bx-tada' ></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="profile-inputs">
+            <div class="img-profile">
+                <img id="profile-img" src="profile.png" alt="">
+            </div>
+            <div class="upload-img">
+                <input id="upload-file" type="file">
+            </div>
+            <form>
+                <div class="inp-box">
+                     <input id="pr-id" placeholder="Id" readonly type="number">
+                </div>
+                <div class="inp-box">
+                     <input id="pr-bank-number" placeholder="Bank Number" readonly type="number">
+                </div>
+                <div class="inp-box">
+                     <input id="pr-username" placeholder="Username" readonly type="text">
+                </div>
+                <div class="inp-box">
+                    <input id="pr-email" readonly placeholder="Email" type="email">
+                </div>
+                <div class="inp-box">
+                    <input id="phone-number" placeholder="Phone Number" type="number">
+                </div>
+                <div class="btn-edit">
+                    <button style="width: fit-content;"  id="generate-btn">Generate ID/NUMBER</button>
+                    <button id="update-btn">Update</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+      <div class="logout-btn">
+        <button id="btn-logout">Log-Out</button>
+      </div>
+    </footer>
+    <video autoplay muted loop id="background-video">
+        <source src="backgroundvideos/backgroundvid1.mp4" type="video/mp4">
+    </video>
+
+
+
+
+
+
+
+    <script src="loginpr.js"></script>
+</body>
+</html>

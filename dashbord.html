@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="shortcut icon" href="bar icons/main icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="dashbord.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+
+
+    <div class="menu">
+        <div class="bmoa">
+        <ul>
+            <li>
+                
+                <a href="dashbord.html">
+                    <img width="200px" src="bmoa logos/BMOA maron.png"Logo">
+                </a>
+                
+            </li>
+        </ul>
+        </div>
+        <div class="sections">
+        <ul>
+            <li id="home" class="active">
+                <i class='bx bx-home'></i>
+                <a class="active" id="active">Home</a>
+            </li>
+        </ul>
+        <ul>
+            <li id="get-paid">
+                <i class='bx bx-wallet'></i>
+                <a id="get-paid">Get Paid</a>
+                
+            </li>
+        </ul>
+        <ul>
+            <li id="cards">
+                <i class='bx bx-credit-card'></i>
+                <a id="cards">Cards</a>
+                
+            </li>
+        </ul>
+        <ul>
+            <li id="convert">
+                <i class='bx bx-money-withdraw'></i>
+                <a id="convert">Convert</a>
+                
+            </li>
+        </ul>
+        <ul>
+            <li id="exchange">
+                <i class='bx bx-dollar'></i>
+                <a  >Exchange Rates</a>
+                
+                
+            </li>
+        </ul>
+        </div>
+        <div class="rights">
+          <p>Privacy | Legal | Fees <br>
+            © 2025 BMOA Inc. <br>
+             All Rights Reserved</p>
+        </div>
+    </div>
+    <div id="exchange-display">
+        <div class="rate-coin">
+            <h2 class="rate-h">Exchange</h2>
+           <div class="box-rate">
+               <form>
+                <div class="usd-rate">
+                     <input placeholder="Usd" type="number" id="usd">
+                </div>
+                <div class="euro-rate">
+                        <input placeholder="Euro" id="eur" type="number">
+                </div>
+                <div class="btn-rate">
+                <button id="clean-btn">Clean</button>
+                </div>
+               </form>
+           </div>
+        </div>
+    </div>
+    <div id="convert-display">
+       
+        <div class="get-paid">
+            <div class="box-getpaid">
+                <i class='bx bx-dollar bx-tada bx-flip-horizontal' ></i>
+                <h4>Convert Currencies</h4>
+            </div>
+            <div class="box-getpaid">
+                <i class='bx bxs-bank bx-tada bx-flip-horizontal' ></i>
+                <h4>Withdraw to Bank</h4>
+            </div>
+            <div class="box-getpaid">
+                <i class='bx bx-chevrons-right bx-tada' ></i>
+                <h4>Transactions</h4>
+            </div>
+
+    </div>
+    </div>
+    <div id="home-display">
+    <div class="home-content">
+        <h2>Home</h2>
+        <a href="Profile.html"><img height="40px" width="40px" src="profile.png" alt=""></a>
+    </div>
+    <div class="balnce">
+        <h3 class="balance-h">Balance(3)</h3>
+        <p class="balance-p">Total funds in all balances: 0.00 </p>
+        <div class="blance-contain">
+          <div class="box-contain">
+            <img width="50px" src="balance Icons/USD.png" alt="">
+             <p class="usd">0.00</p>
+          </div>
+  
+          <div class="box-contain">
+            <img width="50px" src="balance Icons/EUR.png" alt="">
+            <p class="eur">0.00</p>
+          </div>
+  
+          <div class="box-contain">
+            <img width="50px" src="balance Icons/GBP.png" alt="">
+            <p class="gbp">0.00</p>
+          </div>
+        </div>
+    </div>
+    <div class="exchange-coin">
+        <h2 class="exchange-h">Exchange</h2>
+       <div class="box">
+           <form>
+            <div class="usdt">
+                 <input placeholder="Usd" type="number" id="usd">
+            </div>
+            <div class="euros">
+                    <input placeholder="Euro" id="eur" type="number">
+            </div>
+            <div class="btn-exchange">
+            <button type="reset" id="clean-btn" class="button-exchange">Clean</button>
+            </div>
+           </form>
+       </div>
+    </div>
+</div>
+<div id="get-paid-display">
+    <div class="get-paid">
+    <div class="box-getpaid">
+        <i class='bx bx-receipt bx-tada' ></i>
+        <h4>Request a Payment</h4>
+    </div>
+    <div class="box-getpaid">
+        <i class='bx bx-cylinder bx-tada' ></i>
+        <h4>Batch Payment Request to Multipe Payers</h4>
+    </div>
+    <div class="box-getpaid">
+        <i class='bx bx-wallet-alt bx-tada' ></i>
+        <h4>Receiving Accounts</h4>
+    </div>
+</div>
+</div>
+<div id="cards-display">
+      <div class="cards-img">
+        <div class="img-container">
+            <img class="main" width="300px" name="main" src="CARDS/6.png" alt="">  
+            <div class="images">
+              <img onclick="main.src = this.src" class="cards" width="100px" src="CARDS/4.png" alt="">
+              <img onclick="main.src = this.src" class="cards" width="100px" src="CARDS/1.png" alt="">
+              <img onclick="main.src = this.src" class="cards" width="100px" src="CARDS/3.png" alt="">
+              <img onclick="main.src = this.src" class="cards" width="100px" src="CARDS/2.png" alt="">
+              <img onclick="main.src = this.src" class="cards" width="100px" src="CARDS/GAMES CARD.png" alt="">
+              <img onclick="main.src = this.src" class="cards" width="100px" src="CARDS/6.png" alt="">
+              
+
+            </div>
+            <button type="reset" class="btn-order">order now</button>
+          </div>
+</div>
+
+
+
+
+<script>
+    let eur = document.getElementById('eur');
+    let usd = document.getElementById('usd');
+    let btn = document.getElementById('clean-btn');
+    
+
+    usd.onkeyup = function(){
+        eur.value = usd.value * 1.0788;
+     }
+    eur.onkeyup = function(){
+      usd.value = eur.value * 0.9265;
+    };
+
+
+    btn.onclick = function(){
+        eur.value = '';
+        usd.value = '';
+    };
+
+
+
+    let home = document.getElementById('home');
+    let get = document.getElementById('get-paid');
+    let cards = document.getElementById('cards');
+    let convert = document.getElementById('convert');
+    let exchange = document.getElementById('exchange');
+    let $home = document.getElementById('home-display');
+    let $convert = document.getElementById('convert-display');
+    let $cards = document.getElementById('cards-display');
+    let $get = document.getElementById('get-paid-display');
+    let $exchange = document.getElementById('exchange-display');
+    let active = document.getElementById('active');
+    
+    home.onclick = function(){
+        home.style.background = '#434344';
+        get.style.background = 'none';
+        cards.style.background = 'none';
+        convert.style.background = 'none';
+        exchange.style.background = 'none';
+        $home.style.display = 'block';
+        $convert.style.display = 'none';
+        $cards.style.display = 'none';
+        $get.style.display = 'none';
+        $exchange.style.display = 'none';
+    }
+    get.onclick = function(){
+        active.style.background = 'none';
+        home.style.background = 'none';
+        cards.style.background = 'none';
+        convert.style.background = 'none';
+        exchange.style.background = 'none';
+        get.style.background = '#434344';
+        $get.style.display = 'flex';
+        $convert.style.display = 'none';
+        $cards.style.display = 'none';
+        $home.style.display = 'none';
+        $exchange.style.display = 'none';
+    }
+    cards.onclick = function(){
+        active.style.background = 'none';
+        home.style.background = 'none';
+        convert.style.background = 'none';
+        exchange.style.background = 'none';
+        get.style.background = 'none';
+        cards.style.background = '#434344';
+        $cards.style.display = 'flex';
+        $convert.style.display = 'none';
+        $home.style.display = 'none';
+        $get.style.display = 'none';
+        $exchange.style.display = 'none';
+    }
+    convert.onclick = function(){
+        active.style.background = 'none';
+        home.style.background = 'none';
+        exchange.style.background = 'none';
+        get.style.background = 'none';
+        cards.style.background = 'none';
+        convert.style.background = '#434344';
+        $convert.style.display = 'block';
+        $home.style.display = 'none';
+        $cards.style.display = 'none';
+        $get.style.display = 'none';
+        $exchange.style.display = 'none';
+    }
+    exchange.onclick = function(){
+        active.style.background = 'none';
+        home.style.background = 'none';
+        convert.style.background = 'none';
+        get.style.background = 'none';
+        cards.style.background = 'none';
+        exchange.style.background = '#434344';
+        $exchange.style.display = 'block';
+        $convert.style.display = 'none';
+        $cards.style.display = 'none';
+        $get.style.display = 'none';
+        $home.style.display = 'none';
+    }
+</script>
+<script src="loginpr.js"></script>
+</body>
+</html>
