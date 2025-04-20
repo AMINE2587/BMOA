@@ -1,3 +1,7 @@
+window.onload = function(){
+    dataProfile();
+}
+
 function signUp(event) {
     event.preventDefault();
 
@@ -29,7 +33,7 @@ function signUp(event) {
     setTimeout(() => {
         window.location.replace('login.html');
     }, 500);
-    setProfile();
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -61,8 +65,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function dataProfile(){
-    
-}
+    const inp = document.getElementById('upload-file');
+    const img = document.getElementById('profile-img');
+
+    inp.onchange = function(){
+        let file = new FileReader();
+        file.readAsDataURL(inp.files[0]);
+        file.onload = function(){
+            img.src = file.result;
+        } 
+    }
+};
 
 
 
